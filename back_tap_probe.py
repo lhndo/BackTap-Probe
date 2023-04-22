@@ -23,10 +23,10 @@ class BackTapProbe(probe.PrinterProbe):
             if pos[0] == self.x_home:
                 z_deviation = 0
             elif pos[0] > self.x_home:
-                # Calculate positive deviation
+                # Calculate positive x deviation
                 z_deviation = self.xz_deviation_max*(pos[0]-self.x_home)/(self.x_deviation_max_pos-self.x_home)
             else:
-                # Calculate negative deviation
+                # Calculate negative x deviation
                 z_deviation = self.xz_deviation_min*(self.x_home-pos[0])/(self.x_home-self.x_deviation_min_pos)
             # Print New Z values with Deviation
             self.gcode.respond_info("XZ deviation calculated at %.6f, Old Z=%.6f, New Z=%.6f"
@@ -145,4 +145,5 @@ class BackTapCalibration:
 def load_config(config):
     config.get_printer().add_object('probe', BackTapProbe(config, probe.ProbeEndstopWrapper(config)))
     return BackTapCalibration(config)
+    
 
