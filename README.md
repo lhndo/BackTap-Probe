@@ -79,8 +79,8 @@ home_x_pos: 115          # Should match your safe_z_home setting
 home_y_pos: 115          # Should match your safe_z_home setting
 deviation_min_x_pos: 20     # Position of left deviation measurement point. Ideally 20mm from the edge of the bed.
 deviation_max_x_pos: 210    # Position of right deviation measurement point. 
-deviation_min_x: -0.09     # Left deviation offset 
-deviation_max_x: 0.09      # Right deviation offset 
+deviation_min_x: -0.1     # Left deviation offset 
+deviation_max_x: 0.095      # Right deviation offset 
 
 #Calibration settings
 calibration_speed: 150
