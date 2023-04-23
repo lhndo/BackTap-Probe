@@ -11,11 +11,11 @@ For the BackTap Probe to be accurately used for bed meshing, it is required to a
 This is due to the mecanical lever factor, where the actuation is triggered by a moving point along a lever (X gantry).
 <br>
 <br>
-<img src="Images/lever.jpg" width="480" />
+<img src="Images/lever.png" width="580" />
 
 
 
-This extension adds the possibility of defining two deviation offsets alongside the X axis, relative to the home position. These are setup once and doesn't have to be changed when modifying the Z offset. 
+This extension adds the possibility of defining two deviation offsets alongside the X axis, relative to the home position. These are setup once and don't have to be changed when adjusting the Z offset. 
 
 ***The home Z offset is not affected by this code.***
 
@@ -65,7 +65,7 @@ primary_branch: main
 pin: ^PA4          # Endstop pin of the BackTap probe. Needs ^ in front of the pin.
 x_offset: 0
 y_offset: 0
-z_offset: -0.217      
+z_offset: -0.45      
 speed: 4.0
 lift_speed: 10.0
 sample_retract_dist: 2
@@ -79,8 +79,8 @@ home_x_pos: 115          # Should match your safe_z_home setting
 home_y_pos: 115          # Should match your safe_z_home setting
 deviation_min_x_pos: 20     # Position of left deviation measurement point. Ideally 20mm from the edge of the bed.
 deviation_max_x_pos: 210    # Position of right deviation measurement point. 
-deviation_min_x: -0.08     # Left deviation offset 
-deviation_max_x: 0.08      # Right deviation offset 
+deviation_min_x: -0.085     # Left deviation offset 
+deviation_max_x: 0.085      # Right deviation offset 
 
 #Calibration settings
 calibration_speed: 150
@@ -224,9 +224,10 @@ gcode:
 10. Set ***use_deviation: True*** in your ***[back_tap_probe]*** section, generate a bed mesh, and perform a test print similar to Calibration Method A
 
 <br>
+<br>
+
+*Enjoy!*
 
 <img src="Images/meshprint.jpg" width="680" />
 <br>
 <br>
-
-*Enjoy!*
