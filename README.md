@@ -19,7 +19,7 @@ This extension adds the possibility of defining two deviation offsets alongside 
 
 ***The home Z offset is not affected by this code.***
 
-<img src="Images/mesh.png" width="480" />
+<img src="Images/mesh.png" width="680" />
 <br>
 <br>
 
