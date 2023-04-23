@@ -11,7 +11,7 @@ For the BackTap Probe to be accurately used for bed meshing, it is required to a
 This is due to the mecanical lever factor, where the actuation is triggered by a moving point along a lever (X gantry).
 <br>
 <br>
-<img src="Images/lever.png" width="480" />
+<img src="Images/lever.png" width="580" />
 
 
 
@@ -19,7 +19,7 @@ This extension adds the possibility of defining two deviation offsets alongside 
 
 ***The home Z offset is not affected by this code.***
 
-<img src="Images/mesh.png" width="680" />
+<img src="Images/mesh.png" width="480" />
 <br>
 <br>
 
