@@ -123,7 +123,7 @@ horizontal_move_z: 1
 deviation_min_x <br>
 deviation_max_x 
 
-The default values are calibrated based on my own testing on a Creality Ender 3 V2, and should work, or provide a good starting point for fine adjustments, if needed.
+**The default values are calibrated based on my own intensive testing on a Creality Ender 3 V2, and should work for similar configurations, or provide a good starting point for fine adjustments, if needed.**
 
 #### What do they do?
 
