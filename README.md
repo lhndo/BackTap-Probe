@@ -156,7 +156,7 @@ deviation_max_x_pos: 210        # Right offset measuring point. Recommended 20mm
    
 <img src="Images/calibrationstrip.png" width="680" />
    
-   5. Verify the **left side (deviation_min_x)** and **right ride (deviation_min_x)** extremes, against the center of the print.
+   5. Verify the **left side (deviation_min_x)** and **right side (deviation_min_x)** extremes, against the center of the print.
    6. If the nozzle was too far away from the bed compared to the center, decrease the deviation for that side in increments of -0.01 
    7. If the nozzle was too close, scraping the layer compared to the center of the print, increase the deviation offset for that side in increments of +0.01
    8. **Restart Klipper after updating the configuration, re-generate the bed mesh** and repeat the process until the print is consistent all across the X axis
