@@ -62,13 +62,13 @@ primary_branch: main
 [back_tap_probe]
 
 #Probe Settings
-pin: ^PA4          # Endstop pin of the BackTap probe. Needs ^ in front of the pin.
+pin: ^PA7          # Endstop pin of the BackTap probe. Needs ^ in front of the pin.
 x_offset: 0
 y_offset: 0
 z_offset: -0.45      
-speed: 4.0
-lift_speed: 10.0
-sample_retract_dist: 2
+speed: 1.5
+lift_speed: 7.0
+sample_retract_dist: 1
 samples: 1
 samples_tolerance_retries: 6
 samples_result:average
@@ -79,8 +79,8 @@ home_x_pos: 115          # Should match your safe_z_home setting
 home_y_pos: 115          # Should match your safe_z_home setting
 deviation_min_x_pos: 20     # Position of left deviation measurement point. Ideally 20mm from the edge of the bed.
 deviation_max_x_pos: 210    # Position of right deviation measurement point. 
-deviation_min_x: -0.1     # Left deviation offset 
-deviation_max_x: 0.095      # Right deviation offset 
+deviation_min_x: -0.09     # Left deviation offset 
+deviation_max_x: 0.09      # Right deviation offset 
 
 #Calibration settings
 calibration_speed: 150
@@ -97,16 +97,10 @@ calibration_lift_speed: 12
 <pre><code>
 [stepper_z]
 endstop_pin: probe:z_virtual_endstop
-position_min: -2
-homing_speed: 4
-second_homing_speed: 4
-homing_retract_dist: 3
-
-[safe_z_home]
-home_xy_position: 115,115
-speed: 80
-z_hop: 10
-z_hop_speed: 5
+position_min: -5
+homing_speed: 5
+second_homing_speed: 1.5
+homing_retract_dist:1
 
 [screws_tilt_adjust]
 horizontal_move_z: 2
